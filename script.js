@@ -4,5 +4,4 @@ var audio = document.getElementById("audio");
  
 function toggle() {
 audio.play();
-
 }
