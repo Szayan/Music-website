@@ -1,7 +1,10 @@
-const playButton = document.querySelector('.play');
-const pauseButton = document.querySelector('.pause');
 var audio = document.getElementById("audio");
- 
+var button = document.getElementById('button1')
+let number = 0;
+
 function toggle() {
-audio.play();
+//adda adeventlistener
+
+    audio.play();
+    audio.pause();
 }
