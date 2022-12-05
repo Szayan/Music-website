@@ -8,8 +8,8 @@ audio.play();
 
 };
 
-function isEven(clicks) {
-	if (n%2 == 0)
+function isEven(s1) {
+	if (e%2 == 0)
 		return true;
 	else
         return false;
