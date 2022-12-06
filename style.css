@@ -11,5 +11,19 @@ body {
     padding: 10px;
     border-radius: 5px;
     position: relative;
-    
+
+}
+
+#defaultBar {
+    width: 300px;
+    position: relative;
+    background-color: white;
+    height: 10px;
+}
+
+#progressBar {
+    position: absolute;
+    height: 10px;
+    background-color: rgb(4, 146, 218);
+    width: 0px;
 }
