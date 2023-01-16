@@ -16,3 +16,10 @@ function toggle() {
 	}
 }
 
+document.getElementById('buttonid').addEventListener('click', uploadFile);
+function uploadFile()
+{
+document.getElementById('fileid').click()
+}
+
+
