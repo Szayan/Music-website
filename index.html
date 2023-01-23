@@ -14,15 +14,22 @@
             await fetch('/upload.php', {method: "POST", body: formData});
             alert('The file has been uploaded successfully. ');
         } </script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="/script.js"></script>
+        <script src="/data.js"></script>
     </head>
     <body>
-        <button id="button1" onclick="toggle()">Play/Pause</button>
+            <div class="w3-container">
+                    <div class="w3-light-grey">
+                    <div id="myBar" class="w3-green" style="height:24px;width:0"></div>
+                    </div>
+                    <br>
+                    <button id="button" onclick="move(), toggle()" >Play/Pause</button>
+                  </div>
+       
 
         <audio id="audio" src="audio\uptown funk but it's low quality.mp3"></audio>
         <!--Viktigt för senare/ -->
-        <div id="defaultBar">
-            <div id="progressBar"></div>
-
         </div>
         <!--Viktigt för senare/ hur länge låten har spelats-->
         <span id="currentTime">0:00</span>/<span id="fullDuration">0:00</span>
@@ -32,4 +39,4 @@
     <button id="upload-button" onclick="saveFile()">Upload</button>
         <div id="audio_box"></div>
     </body>
-</html>
+</html> 
