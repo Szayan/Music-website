@@ -6,8 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>music</title>
         <link rel="stylesheet" href="style.css">
-        <script defer src="/script.js"></script>
-        <script defer src="/data.js"></script>
         <script> async function saveFile() {
             let formData = new FormData();
             formData.append("file", fileuUpload.files[0]);
@@ -15,18 +13,20 @@
             alert('The file has been uploaded successfully. ');
         } </script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <script src="/script.js"></script>
-        <script src="/data.js"></script>
+        <script src="/script.js" defer></script>
+        <script src="/data.js" defer></script>
     </head>
     <body>
         <div class="w3-container">
             <div class="w3-light-grey">
             <div id="myBar" class="w3-green" style="height:24px;width:0"></div></div>
-            <button id="button" onclick="move(), toggle()" >Play/Pause</button>
             <audio id="audio" src="audio\uptown funk but it's low quality.mp3"></audio>
             <span id="currentTime">0:00</span>/<span id="fullDuration">0:00</span>
             <input id='fileid' type='file' hidden/>
         </div>
+
+        <button id="button" onclick="move(); toggle()">Play/Pause</button>
+
         
         <input id="fileupload" type="file" name="fileupload" />
         <button id="upload-button" onclick="saveFile()">Upload</button>

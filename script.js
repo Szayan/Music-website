@@ -1,16 +1,22 @@
 const playButton = document.querySelector('.play');
 const pauseButton = document.querySelector('.pause');
 const myAudio = document.getElementById("audio");
+var isPlaying = false;	
 
-	
 function toggle() {
-	if (!myAudio.paused && !myAudio.ended) {
-		myAudio.pause();
-	}
-	else {
-		myAudio.play();
-	}
-}
+  if (isPlaying) {
+    myAudio.pause();
+  } else {
+    myAudio.play();
+  }
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
 
 function move() {
 	var elem = document.getElementById("myBar");   
@@ -24,14 +30,5 @@ function move() {
 		elem.style.width = width + '%'; 
 	  }
 	}
-  }
-
-document.getElementById('buttonid').addEventListener('click', uploadFile);
-function uploadFile(){
-document.getElementById('fileid').click()
-}
-
-function upload() {
-
 }
 
