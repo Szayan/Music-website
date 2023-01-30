@@ -19,24 +19,17 @@
         <script src="/data.js"></script>
     </head>
     <body>
-            <div class="w3-container">
-                    <div class="w3-light-grey">
-                    <div id="myBar" class="w3-green" style="height:24px;width:0"></div>
-                    </div>
-                    <br>
-                    <button id="button" onclick="move(), toggle()" >Play/Pause</button>
-                  </div>
-       
-
-        <audio id="audio" src="audio\uptown funk but it's low quality.mp3"></audio>
-        <!--Viktigt för senare/ -->
+        <div class="w3-container">
+            <div class="w3-light-grey">
+            <div id="myBar" class="w3-green" style="height:24px;width:0"></div></div>
+            <button id="button" onclick="move(), toggle()" >Play/Pause</button>
+            <audio id="audio" src="audio\uptown funk but it's low quality.mp3"></audio>
+            <span id="currentTime">0:00</span>/<span id="fullDuration">0:00</span>
+            <input id='fileid' type='file' hidden/>
         </div>
-        <!--Viktigt för senare/ hur länge låten har spelats-->
-        <span id="currentTime">0:00</span>/<span id="fullDuration">0:00</span>
-        <input id='fileid' type='file' hidden/>
         
-    <input id="fileupload" type="file" name="fileupload" />
-    <button id="upload-button" onclick="saveFile()">Upload</button>
+        <input id="fileupload" type="file" name="fileupload" />
+        <button id="upload-button" onclick="saveFile()">Upload</button>
         <div id="audio_box"></div>
     </body>
 </html> 
